@@ -1,47 +1,33 @@
-// Run after page loads
-document.addEventListener("DOMContentLoaded", function () {
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
 
-  // DARK MODE
-  window.toggleDarkMode = function () {
-    document.body.classList.toggle("dark-mode");
-  };
+function openImage(img) {
+  document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup-img").src = img.src;
+}
 
-  // IMAGE POPUP
-  window.openImage = function (img) {
-    document.getElementById("popup").style.display = "flex";
-    document.getElementById("popup-img").src = img.src;
-  };
+function closeImage() {
+  document.getElementById("popup").style.display = "none";
+}
 
-  window.closeImage = function () {
-    document.getElementById("popup").style.display = "none";
-  };
+function highlightCert(id) {
+  document.getElementById(id).classList.add("highlight");
+}
 
-  // SCROLL ANIMATION
-  const faders = document.querySelectorAll(".fade");
+function removeHighlight(id) {
+  document.getElementById(id).classList.remove("highlight");
+}
 
-  function showOnScroll() {
-    faders.forEach(el => {
-      if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-        el.classList.add("show");
-      }
-    });
+// typing
+const text = "Aspiring Engineer | AI Enthusiast | Python Learner";
+let i = 0;
+
+function type() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(type, 50);
   }
-
-  window.addEventListener("scroll", showOnScroll);
-  showOnScroll(); // run once
-
-  // TYPING EFFECT
-  const text = "Aspiring Engineer | AI Enthusiast | Python Learner";
-  let i = 0;
-
-  function type() {
-    if (i < text.length) {
-      document.getElementById("typing").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(type, 50);
-    }
-  }
-
-  type();
-
-});
+}
+type();
