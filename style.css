@@ -11,7 +11,6 @@ nav {
   justify-content: space-between;
   padding: 20px 60px;
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -27,45 +26,19 @@ nav a {
 
 /* HERO */
 .hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #6366f1, #22c55e);
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.hero h1 {
-  font-size: 55px;
-}
-
-.hero span {
-  background: linear-gradient(45deg, #ff00cc, #3333ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 12px 30px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #3b82f6;
 }
 
 /* SECTIONS */
 section {
   padding: 80px;
-}
-
-/* STATS */
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-}
-
-.stat h1 {
-  font-size: 40px;
 }
 
 /* CARDS */
@@ -78,19 +51,36 @@ section {
 .card {
   flex: 1;
   min-width: 250px;
-  padding: 30px;
-  border-radius: 15px;
+  padding: 25px;
+  border-radius: 12px;
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px rgba(99,102,241,0.5);
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(59,130,246,0.5);
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* MARKSHEET */
+.marksheet img {
+  width: 300px;
+  margin-top: 20px;
 }
 
 /* CONTACT */
-.contact {
-  text-align: center;
+#contact a {
+  color: #3b82f6;
 }
