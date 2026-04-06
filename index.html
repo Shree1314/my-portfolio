@@ -2,142 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shreyas Lokhande Portfolio</title>
+  <title>Shreyas Lokhande</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <h2>Shreyas</h2>
   <ul>
-    <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#achievements">Achievements</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button onclick="toggleDarkMode()">🌙</button>
 </nav>
 
-<!-- HOME -->
-<header id="home" class="fade">
-  <div class="hero">
-    <img src="images/pfp.jpeg" class="profile">
-    <h1>Shreyas P Lokhande</h1>
-    <p id="typing"></p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Shreyas P Lokhande</span></h1>
+    <p>Aspiring Engineer | AI Enthusiast | Python Learner</p>
+    <a href="#projects"><button>Explore My Work</button></a>
   </div>
-</header>
+</section>
 
 <!-- ABOUT -->
-<section id="about" class="fade">
+<section id="about" class="about">
   <h2>About Me</h2>
 
-  <p>Hello, my name is <b>Shreyas P Lokhande</b> and welcome to my website.</p>
+  <p>Hello, my name is Shreyas P Lokhande, and welcome to my personal portfolio website.</p>
 
-  <p>I have completed my 12th and I am currently in my 1st year of engineering.</p>
+  <p>I have completed my 12th grade and I am currently pursuing my first year of engineering.</p>
 
-  <p>My interests are in AI, programming and Python.</p>
+  <p>My interests lie in Artificial Intelligence, programming, and Python development.</p>
 
-  <p>My goal is to learn more programming languages and improve my skills.</p>
+  <p>My goal is to learn multiple programming languages and continuously improve my technical skills.</p>
 
-  <p>My strengths are multitasking, being a fast learner and helping others.</p>
+  <p>My strengths include multitasking, being a fast learner, and always being ready to help others.</p>
 
-  <p>I have completed Coursera courses and also earned the Yuva AI certificate.</p>
+  <p>I have completed several Coursera courses and also earned the Yuva AI certification.</p>
+</section>
 
-  <h3>Education</h3>
-  <p>12th (Science Stream)</p>
-
-  <div class="marksheet">
-    <img src="images/c12.png">
+<!-- STATS -->
+<section class="stats">
+  <div class="stat">
+    <h1>7+</h1>
+    <p>Certificates</p>
+  </div>
+  <div class="stat">
+    <h1>3</h1>
+    <p>Projects</p>
+  </div>
+  <div class="stat">
+    <h1>1st Year</h1>
+    <p>Engineering</p>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="fade">
+<section id="projects" class="projects">
   <h2>My Projects</h2>
 
   <div class="cards">
     <div class="card">
       <h3>Smart Stadium & Crowd Management</h3>
-      <p>AI4A project focused on managing large crowds efficiently.</p>
+      <p>This AI4A project focuses on managing large crowds efficiently using smart technology solutions.</p>
     </div>
 
     <div class="card">
       <h3>Construction Site Management</h3>
-      <p>Design thinking project improving site safety.</p>
+      <p>A design thinking project aimed at improving safety and organization at construction sites.</p>
     </div>
 
     <div class="card">
       <h3>Food Waste Management</h3>
-      <p>ACE project to reduce food wastage.</p>
+      <p>An ACE project focused on reducing food wastage and improving distribution systems.</p>
     </div>
   </div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section id="achievements" class="fade">
-  <h2>Achievements & Certifications</h2>
+<section id="achievements" class="projects">
+  <h2>Achievements</h2>
 
   <div class="cards">
-
-    <div class="card" onmouseover="highlightCert('c0')" onmouseout="removeHighlight('c0')">
-      <h3>Python Programming</h3>
-    </div>
-
-    <div class="card" onmouseover="highlightCert('c1')" onmouseout="removeHighlight('c1')">
-      <h3>Engineering Physics</h3>
-    </div>
-
-    <div class="card" onmouseover="highlightCert('c2')" onmouseout="removeHighlight('c2')">
-      <h3>Chemistry (ACE)</h3>
-    </div>
-
-    <div class="card" onmouseover="highlightCert('c3')" onmouseout="removeHighlight('c3')">
-      <h3>Email Etiquette</h3>
-    </div>
-
-    <div class="card" onmouseover="highlightCert('c4')" onmouseout="removeHighlight('c4')">
-      <h3>MATLAB Programming</h3>
-    </div>
-
-    <div class="card" onmouseover="highlightCert('c5')" onmouseout="removeHighlight('c5')">
-      <h3>Professional Skills</h3>
-    </div>
-
-    <div class="card" onmouseover="highlightCert('c6')" onmouseout="removeHighlight('c6')">
-      <h3>AI for All</h3>
-    </div>
-
+    <div class="card">Python Programming Certification</div>
+    <div class="card">Engineering Physics Course</div>
+    <div class="card">Chemistry (ACE)</div>
+    <div class="card">Email Etiquette</div>
+    <div class="card">MATLAB Programming</div>
+    <div class="card">Professional Skills</div>
+    <div class="card">Yuva AI Certification</div>
   </div>
-
-  <div class="gallery">
-    <img id="c0" src="images/c0.png" onclick="openImage(this)">
-    <img id="c1" src="images/c1.png" onclick="openImage(this)">
-    <img id="c2" src="images/c2.png" onclick="openImage(this)">
-    <img id="c3" src="images/c3.png" onclick="openImage(this)">
-    <img id="c4" src="images/c4.png" onclick="openImage(this)">
-    <img id="c5" src="images/c5.png" onclick="openImage(this)">
-    <img id="c6" src="images/c6.png" onclick="openImage(this)">
-  </div>
-
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="fade">
-  <h2>Contact</h2>
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
   <p>📞 8767812138</p>
   <p>📧 Shreyaslokhande37@gmail.com</p>
-  <p><a href="https://github.com/Shree1314" target="_blank">GitHub</a></p>
-  <p><a href="https://in.linkedin.com/in/shreyas-lokhande-595420380" target="_blank">LinkedIn</a></p>
+  <p>💻 <a href="https://github.com/Shree1314" target="_blank">GitHub</a></p>
+  <p>🔗 <a href="https://in.linkedin.com/in/shreyas-lokhande-595420380" target="_blank">LinkedIn</a></p>
 </section>
 
-<!-- POPUP -->
-<div id="popup" onclick="closeImage()">
-  <img id="popup-img">
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
