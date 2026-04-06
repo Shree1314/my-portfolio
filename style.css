@@ -5,29 +5,10 @@ body {
   color: white;
 }
 
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: rgba(255,255,255,0.05);
-}
-
-nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
 /* HERO */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px;
 }
 
 .profile {
@@ -38,28 +19,39 @@ nav a {
 
 /* SECTIONS */
 section {
-  padding: 80px;
+  padding: 60px;
 }
 
-/* CARDS */
+/* PROJECT CARDS */
 .cards {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-  flex: 1;
-  min-width: 250px;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 20px;
   background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+/* CERTIFICATE NAMES */
+.cert-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cert-names span {
+  padding: 8px 15px;
+  background: #1e293b;
+  border-radius: 20px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px rgba(59,130,246,0.5);
+.cert-names span:hover {
+  background: #3b82f6;
 }
 
 /* GALLERY */
@@ -70,17 +62,13 @@ section {
 }
 
 .gallery img {
-  width: 250px;
+  width: 220px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
-/* MARKSHEET */
-.marksheet img {
-  width: 300px;
-  margin-top: 20px;
-}
-
-/* CONTACT */
-#contact a {
-  color: #3b82f6;
+/* HIGHLIGHT EFFECT */
+.highlight {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px #3b82f6;
 }
