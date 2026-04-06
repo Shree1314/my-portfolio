@@ -3,6 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #1f1c2c, #928dab);
   color: white;
+  scroll-behavior: smooth;
 }
 
 /* NAV */
@@ -25,6 +26,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #00ffd5;
+}
+
 /* HERO */
 .hero {
   text-align: center;
@@ -35,6 +40,7 @@ nav a {
   width: 160px;
   border-radius: 50%;
   border: 4px solid white;
+  box-shadow: 0 0 20px #00ffd5;
 }
 
 /* SECTION */
@@ -49,7 +55,6 @@ section {
 /* MARKSHEET */
 .marksheet img {
   width: 300px;
-  margin-top: 20px;
   border-radius: 10px;
 }
 
@@ -62,13 +67,33 @@ section {
 }
 
 .gallery img {
-  width: 280px;
-  border-radius: 12px;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .gallery img:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffd5;
+}
+
+/* POPUP */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#popup img {
+  max-width: 80%;
+  border-radius: 10px;
 }
 
 /* ANIMATION */
