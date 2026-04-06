@@ -1,48 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shreyas Lokhande Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Shreyas</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button onclick="toggleDarkMode()">🌙</button>
+</nav>
+
+<header id="home" class="fade">
+  <div class="hero">
+    <img src="images/pfp.jpeg" class="profile">
+    <h1>Shreyas P Lokhande</h1>
+    <p id="typing"></p>
+  </div>
+</header>
+
+<section id="about" class="fade">
+  <h2>About Me</h2>
+  <p>I am a first-year engineering student passionate about AI, programming, and Python.</p>
+
+  <h3>Education</h3>
+  <p>Completed 12th (Science Stream)</p>
+
+  <div class="marksheet">
+    <img src="images/c12.png">
+  </div>
+</section>
+
 <section id="achievements" class="fade">
   <h2>Achievements & Certifications</h2>
 
+  <!-- TEXT CARDS -->
   <div class="cards">
-
     <div class="card">
       <h3>Python Programming</h3>
       <p>Completed "Programming for Everybody" from University of Michigan.</p>
-      <p>Gained strong foundation in Python and problem solving.</p>
     </div>
 
     <div class="card">
       <h3>Engineering Physics</h3>
-      <p>Completed Engineering Physics Prerequisites course.</p>
-      <p>Developed analytical thinking and engineering basics.</p>
+      <p>Built strong analytical and engineering fundamentals.</p>
     </div>
 
     <div class="card">
       <h3>Chemistry (ACE)</h3>
-      <p>Revisited core chemistry concepts for engineering preparation.</p>
+      <p>Revised core chemistry concepts for engineering.</p>
     </div>
 
     <div class="card">
       <h3>Email Etiquette</h3>
-      <p>Learned professional communication and formal email writing.</p>
+      <p>Learned professional communication skills.</p>
     </div>
 
     <div class="card">
       <h3>MATLAB Programming</h3>
-      <p>Introduction to programming using MATLAB from Vanderbilt University.</p>
+      <p>Learned programming using MATLAB.</p>
     </div>
 
     <div class="card">
       <h3>Professional Skills</h3>
-      <p>Developed workplace behavior and professional etiquette skills.</p>
+      <p>Developed workplace etiquette and behavior.</p>
     </div>
 
     <div class="card">
       <h3>AI for All</h3>
-      <p>Completed Yuva AI certification, gaining knowledge of AI concepts.</p>
+      <p>Gained knowledge about Artificial Intelligence.</p>
     </div>
-
   </div>
 
-  <!-- IMAGE GALLERY BELOW -->
+  <!-- IMAGE GALLERY -->
   <div class="gallery">
     <img src="images/c0.png" onclick="openImage(this)">
     <img src="images/c1.png" onclick="openImage(this)">
@@ -54,3 +93,20 @@
   </div>
 
 </section>
+
+<section id="contact" class="fade">
+  <h2>Contact</h2>
+  <p>📞 8767812138</p>
+  <p>📧 Shreyaslokhande37@gmail.com</p>
+  <p><a href="https://github.com/Shree1314" target="_blank">GitHub</a></p>
+  <p><a href="https://in.linkedin.com/in/shreyas-lokhande-595420380" target="_blank">LinkedIn</a></p>
+</section>
+
+<!-- POPUP -->
+<div id="popup" onclick="closeImage()">
+  <img id="popup-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
