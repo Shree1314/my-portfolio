@@ -4,94 +4,68 @@
   <meta charset="UTF-8">
   <title>Shreyas Lokhande</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
   <h2>Shreyas</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="images/pfp.jpeg" class="profile">
+  <img src="./images/pfp.jpeg" class="profile">
   <h1>Shreyas P Lokhande</h1>
-  <p>Aspiring Engineer | AI Enthusiast | Python Learner</p>
+  <p>Aspiring Engineer | AI | Python</p>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section>
   <h2>About Me</h2>
-
-  <p>Hello, my name is Shreyas P Lokhande and welcome to my portfolio website.</p>
-
-  <p>I have completed my 12th and I am currently in my first year of engineering.</p>
-
-  <p>My interests are in Artificial Intelligence, programming, and Python.</p>
-
-  <p>My goal is to learn more programming languages and improve my skills.</p>
-
-  <p>My strengths are multitasking, being a fast learner, and helping others.</p>
-
-  <h3>Education</h3>
-  <div class="marksheet">
-    <img src="images/c12.png">
-  </div>
+  <p>Hello, my name is Shreyas P Lokhande. I am a first-year engineering student.</p>
+  <p>I am interested in AI, programming, and Python.</p>
+  <p>I am a fast learner, multitasker, and always ready to help others.</p>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section>
   <h2>Projects</h2>
-
   <div class="cards">
-    <div class="card">
-      <h3>Smart Stadium & Crowd Management</h3>
-      <p>AI-based system for managing large crowds efficiently.</p>
-    </div>
-
-    <div class="card">
-      <h3>Construction Site Management</h3>
-      <p>Improving safety and workflow in construction areas.</p>
-    </div>
-
-    <div class="card">
-      <h3>Food Waste Management</h3>
-      <p>System to reduce food wastage and improve distribution.</p>
-    </div>
+    <div class="card">Smart Stadium & Crowd Management</div>
+    <div class="card">Construction Site Management</div>
+    <div class="card">Food Waste Management</div>
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
+<!-- CERTIFICATES -->
+<section>
   <h2>Certificates</h2>
 
-  <div class="gallery">
-    <img src="images/c0.png">
-    <img src="images/c1.png">
-    <img src="images/c2.png">
-    <img src="images/c3.png">
-    <img src="images/c4.png">
-    <img src="images/c5.png">
-    <img src="images/c6.png">
+  <!-- NAMES -->
+  <div class="cert-names">
+    <span onmouseover="highlight('c0')" onmouseout="removeHighlight('c0')">Python Programming</span>
+    <span onmouseover="highlight('c1')" onmouseout="removeHighlight('c1')">Engineering Physics</span>
+    <span onmouseover="highlight('c2')" onmouseout="removeHighlight('c2')">Chemistry</span>
+    <span onmouseover="highlight('c3')" onmouseout="removeHighlight('c3')">Email Etiquette</span>
+    <span onmouseover="highlight('c4')" onmouseout="removeHighlight('c4')">MATLAB</span>
+    <span onmouseover="highlight('c5')" onmouseout="removeHighlight('c5')">Professional Skills</span>
+    <span onmouseover="highlight('c6')" onmouseout="removeHighlight('c6')">AI for All</span>
   </div>
+
+  <!-- IMAGES -->
+  <div class="gallery">
+    <img id="c0" src="./images/c0.png">
+    <img id="c1" src="./images/c1.png">
+    <img id="c2" src="./images/c2.png">
+    <img id="c3" src="./images/c3.png">
+    <img id="c4" src="./images/c4.png">
+    <img id="c5" src="./images/c5.png">
+    <img id="c6" src="./images/c6.png">
+  </div>
+
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>📞 8767812138</p>
-  <p>📧 Shreyaslokhande37@gmail.com</p>
-  <p><a href="https://github.com/Shree1314">GitHub</a></p>
-  <p><a href="https://in.linkedin.com/in/shreyas-lokhande-595420380">LinkedIn</a></p>
-</section>
-
-<script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
