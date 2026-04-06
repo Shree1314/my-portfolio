@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Shreyas Lokhande Portfolio</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,48 +22,40 @@
   <button onclick="toggleDarkMode()">🌙</button>
 </nav>
 
-<!-- HERO -->
 <header id="home" class="fade">
   <div class="hero">
     <img src="images/pfp.jpeg" class="profile">
     <h1>Shreyas P Lokhande</h1>
-    <p>Aspiring Engineer | AI Enthusiast | Python Learner</p>
+    <p id="typing"></p>
   </div>
 </header>
 
-<!-- ABOUT + EDUCATION -->
 <section id="about" class="fade">
   <h2>About Me</h2>
   <p>I am a first-year engineering student passionate about AI, programming, and Python.</p>
-  <p>I aim to learn multiple programming languages and grow in the tech field.</p>
 
   <h3>Education</h3>
   <p>Completed 12th (Science Stream)</p>
 
-  <!-- 12th Marksheet -->
   <div class="marksheet">
     <img src="images/c12.png">
   </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
 <section id="achievements" class="fade">
-  <h2>Achievements & Certificates</h2>
+  <h2>Achievements</h2>
 
   <div class="gallery">
-
-    <img src="images/c0.png">
-    <img src="images/c1.png">
-    <img src="images/c2.png">
-    <img src="images/c3.png">
-    <img src="images/c4.png">
-    <img src="images/c5.png">
-    <img src="images/c6.png">
-
+    <img src="images/c0.png" onclick="openImage(this)">
+    <img src="images/c1.png" onclick="openImage(this)">
+    <img src="images/c2.png" onclick="openImage(this)">
+    <img src="images/c3.png" onclick="openImage(this)">
+    <img src="images/c4.png" onclick="openImage(this)">
+    <img src="images/c5.png" onclick="openImage(this)">
+    <img src="images/c6.png" onclick="openImage(this)">
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="fade">
   <h2>Contact</h2>
   <p>📞 8767812138</p>
@@ -67,6 +63,11 @@
   <p><a href="https://github.com/Shree1314" target="_blank">GitHub</a></p>
   <p><a href="https://in.linkedin.com/in/shreyas-lokhande-595420380" target="_blank">LinkedIn</a></p>
 </section>
+
+<!-- Image Popup -->
+<div id="popup" onclick="closeImage()">
+  <img id="popup-img">
+</div>
 
 <script src="script.js"></script>
 </body>
