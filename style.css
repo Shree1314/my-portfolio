@@ -1,114 +1,21 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  color: white;
-  scroll-behavior: smooth;
-}
-
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #00ffd5;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.profile {
-  width: 160px;
-  border-radius: 50%;
-  border: 4px solid white;
-  box-shadow: 0 0 20px #00ffd5;
-}
-
-/* SECTION */
-section {
-  margin: 40px;
-  padding: 40px;
-  border-radius: 15px;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-}
-
-/* MARKSHEET */
-.marksheet img {
-  width: 300px;
-  border-radius: 10px;
-}
-
-/* GALLERY */
-.gallery {
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  margin-bottom: 30px;
 }
 
-.gallery img {
-  width: 250px;
-  border-radius: 10px;
-  cursor: pointer;
+.card {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
   transition: 0.3s;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #00ffd5;
-}
-
-/* POPUP */
-#popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-}
-
-#popup img {
-  max-width: 80%;
-  border-radius: 10px;
-}
-
-/* ANIMATION */
-.fade {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 1s;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* DARK MODE */
-.dark-mode {
-  background: black;
+.card:hover {
+  transform: scale(1.05);
+  background: #00ffd5;
+  color: black;
 }
