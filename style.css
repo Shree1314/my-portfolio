@@ -1,74 +1,78 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #0f172a;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #0f172a, #1e1b4b);
   color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
 }
 
 /* HERO */
 .hero {
-  text-align: center;
-  padding: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
 }
 
 .profile {
-  width: 150px;
+  width: 250px;
   border-radius: 50%;
-  border: 3px solid #3b82f6;
+  box-shadow: 0 0 30px purple;
 }
 
-/* SECTIONS */
-section {
-  padding: 60px;
+.btn {
+  padding: 10px 20px;
+  background: purple;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
 }
 
-/* PROJECT CARDS */
-.cards {
-  display: flex;
-  gap: 20px;
-}
-
+/* CARDS */
 .card {
+  background: rgba(255,255,255,0.1);
   padding: 20px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-/* CERTIFICATE NAMES */
-.cert-names {
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* CERT */
+.cert-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
-.cert-names span {
-  padding: 8px 15px;
-  background: #1e293b;
-  border-radius: 20px;
+.cert-list p {
   cursor: pointer;
-  transition: 0.3s;
+  margin: 10px;
 }
 
-.cert-names span:hover {
-  background: #3b82f6;
+.cert-list p:hover {
+  color: cyan;
 }
 
-/* GALLERY */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.gallery img {
-  width: 220px;
+.cert-display img {
+  width: 400px;
   border-radius: 10px;
   transition: 0.3s;
 }
 
-/* HIGHLIGHT EFFECT */
-.highlight {
-  transform: scale(1.15);
-  box-shadow: 0 0 20px #3b82f6;
+.cert-display img:hover {
+  transform: scale(1.05);
 }
