@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0a0a0a, #0f172a, #1e1b4b);
+  background: linear-gradient(135deg, #0f172a, #1e1b4b);
   color: white;
 }
 
@@ -9,9 +9,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  position: sticky;
-  top: 0;
+  padding: 20px 60px;
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
 }
@@ -19,60 +17,71 @@ nav {
 /* HERO */
 .hero {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  justify-content: space-around;
+  height: 90vh;
 }
 
-.profile {
+.hero img {
   width: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 30px purple;
-}
-
-.btn {
-  padding: 10px 20px;
-  background: purple;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
 }
 
 /* CARDS */
 .card {
-  background: rgba(255,255,255,0.1);
   padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
 }
 
-/* CERT */
-.cert-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cert-list p {
-  cursor: pointer;
-  margin: 10px;
-}
-
-.cert-list p:hover {
-  color: cyan;
-}
-
-.cert-display img {
-  width: 400px;
+/* SKILLS */
+.bar {
+  background: #333;
+  height: 10px;
   border-radius: 10px;
+}
+
+.bar div {
+  background: #6366f1;
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.cert-display img:hover {
-  transform: scale(1.05);
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* MODAL */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  max-width: 80%;
 }
