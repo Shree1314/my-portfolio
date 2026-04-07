@@ -1,71 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shreyas Lokhande</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyas Lokhande</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav>
   <h2>Shreyas</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <img src="./images/pfp.jpeg" class="profile">
-  <h1>Shreyas P Lokhande</h1>
-  <p>Aspiring Engineer | AI | Python</p>
+  <div class="hero-text">
+    <h1>Shreyas P Lokhande</h1>
+    <h3>Turning ideas into impactful reality</h3>
+    <p>Engineering student passionate about AI, programming and innovation.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+  <img src="images/profile.jpg" class="profile">
 </section>
 
 <!-- ABOUT -->
-<section>
+<section id="about">
   <h2>About Me</h2>
-  <p>Hello, my name is Shreyas P Lokhande. I am a first-year engineering student.</p>
-  <p>I am interested in AI, programming, and Python.</p>
-  <p>I am a fast learner, multitasker, and always ready to help others.</p>
-</section>
+  <p>
+    I am a first-year engineering student with a strong interest in Artificial Intelligence,
+    programming, and Python. I am a fast learner and enjoy building impactful solutions.
+  </p>
 
-<!-- PROJECTS -->
-<section>
-  <h2>Projects</h2>
-  <div class="cards">
-    <div class="card">Smart Stadium & Crowd Management</div>
-    <div class="card">Construction Site Management</div>
-    <div class="card">Food Waste Management</div>
+  <div class="skills">
+    <div class="card">AI</div>
+    <div class="card">Python</div>
+    <div class="card">Programming</div>
+    <div class="card">Problem Solving</div>
+  </div>
+
+  <!-- EDUCATION -->
+  <h3>Education</h3>
+  <div class="education">
+    <img src="images/board.jpg" class="edu-img">
+    <p>Completed 12th (Science) - Maharashtra Board</p>
   </div>
 </section>
 
 <!-- CERTIFICATES -->
-<section>
+<section id="certificates">
   <h2>Certificates</h2>
 
-  <!-- NAMES -->
-  <div class="cert-names">
-    <span onmouseover="highlight('c0')" onmouseout="removeHighlight('c0')">Python Programming</span>
-    <span onmouseover="highlight('c1')" onmouseout="removeHighlight('c1')">Engineering Physics</span>
-    <span onmouseover="highlight('c2')" onmouseout="removeHighlight('c2')">Chemistry</span>
-    <span onmouseover="highlight('c3')" onmouseout="removeHighlight('c3')">Email Etiquette</span>
-    <span onmouseover="highlight('c4')" onmouseout="removeHighlight('c4')">MATLAB</span>
-    <span onmouseover="highlight('c5')" onmouseout="removeHighlight('c5')">Professional Skills</span>
-    <span onmouseover="highlight('c6')" onmouseout="removeHighlight('c6')">AI for All</span>
-  </div>
+  <div class="cert-container">
 
-  <!-- IMAGES -->
-  <div class="gallery">
-    <img id="c0" src="./images/c0.png">
-    <img id="c1" src="./images/c1.png">
-    <img id="c2" src="./images/c2.png">
-    <img id="c3" src="./images/c3.png">
-    <img id="c4" src="./images/c4.png">
-    <img id="c5" src="./images/c5.png">
-    <img id="c6" src="./images/c6.png">
-  </div>
+    <!-- LEFT NAMES -->
+    <div class="cert-list">
+      <p onmouseover="showCert(1)">Yuva AI for All</p>
+      <p onmouseover="showCert(2)">Professional Etiquette Skills</p>
+      <p onmouseover="showCert(3)">MATLAB Programming</p>
+      <p onmouseover="showCert(4)">Email Etiquette</p>
+      <p onmouseover="showCert(5)">Chemistry Course</p>
+      <p onmouseover="showCert(6)">Engineering Physics</p>
+      <p onmouseover="showCert(7)">Python Programming</p>
+    </div>
 
+    <!-- RIGHT IMAGE -->
+    <div class="cert-display">
+      <img id="certImage" src="images/cert1.jpg">
+    </div>
+
+  </div>
 </section>
 
-</body>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Smart Stadium</h3>
+      <p>AI-based crowd management system.</p>
+    </div>
+
+    <div class="card">
+      <h3>Construction Management</h3>
+      <p>Design thinking solution for site efficiency.</p>
+    </div>
+
+    <div class="card">
+      <h3>Food Waste Management</h3>
+      <p>ACE project to reduce food wastage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: Shreyaslokhande37@gmail.com</p>
+  <p>Phone: 8767812138</p>
+  <a href="https://github.com/Shree1314" target="_blank">GitHub</a>
+</section>
+
 <script src="script.js"></script>
+</body>
 </html>
