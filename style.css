@@ -1,9 +1,15 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #c3b1e1, #f8bbd0);
-  color: black;
+  background: linear-gradient(135deg, #0f172a 40%, #b8a4e3 60%);
+  color: white;
   text-align: center;
+}
+
+/* NAV */
+nav {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
 }
 
 /* HERO */
@@ -14,29 +20,40 @@ body {
 .profile {
   width: 150px;
   border-radius: 50%;
+  border: 3px solid #7c3aed;
 }
 
-/* MARKSHEET */
-.marksheet {
-  width: 250px;
-  margin-top: 20px;
+/* SECTION */
+section {
+  padding: 60px;
 }
 
-/* PROJECT CARDS */
+/* CARDS */
 .card {
-  background: white;
+  background: rgba(255,255,255,0.05);
   margin: 10px;
   padding: 15px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #7c3aed;
 }
 
 /* CERTIFICATES */
 .cert {
   margin: 10px;
   padding: 10px;
-  background: #ddd;
+  background: rgba(255,255,255,0.08);
   cursor: pointer;
   border-radius: 8px;
+  transition: 0.3s;
+}
+
+.cert:hover {
+  background: #7c3aed;
 }
 
 /* MODAL */
@@ -53,4 +70,5 @@ body {
 
 #modal img {
   max-width: 80%;
+  border-radius: 10px;
 }
