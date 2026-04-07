@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shreyas Lokhande</title>
-<link rel="stylesheet" href="style.css">
-</head>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
   <h2>Shreyas</h2>
   <ul>
     <li><a href="#about">About</a></li>
+    <li><a href="#projects">Work</a></li>
     <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -25,32 +26,66 @@
   <div class="hero-text">
     <h1>Shreyas P Lokhande</h1>
     <h3>Turning ideas into impactful reality</h3>
-    <p>Engineering student passionate about AI, programming and innovation.</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <p>I am a first-year engineering student passionate about AI, programming and building real-world solutions.</p>
+    <button onclick="scrollToSection()">View My Work</button>
   </div>
-  <img src="images/profile.jpg" class="profile">
+
+  <div class="hero-img">
+    <img src="./images/pfp.jpeg">
+  </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
-  <p>
-    I am a first-year engineering student with a strong interest in Artificial Intelligence,
-    programming, and Python. I am a fast learner and enjoy building impactful solutions.
-  </p>
 
-  <div class="skills">
-    <div class="card">AI</div>
-    <div class="card">Python</div>
-    <div class="card">Programming</div>
-    <div class="card">Problem Solving</div>
+  <div class="about-cards">
+    <div class="card">
+      <h3>Background</h3>
+      <p>I have completed my 12th and currently pursuing engineering.</p>
+    </div>
+
+    <div class="card">
+      <h3>Interests</h3>
+      <p>AI, Programming, Python</p>
+    </div>
+
+    <div class="card">
+      <h3>Strengths</h3>
+      <p>Fast learner, multitasker, team helper</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>Python</p>
+    <div class="bar"><div style="width:80%"></div></div>
   </div>
 
-  <!-- EDUCATION -->
-  <h3>Education</h3>
-  <div class="education">
-    <img src="images/board.jpg" class="edu-img">
-    <p>Completed 12th (Science) - Maharashtra Board</p>
+  <div class="skill">
+    <p>AI Concepts</p>
+    <div class="bar"><div style="width:70%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Problem Solving</p>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="cards">
+    <div class="card">Smart Stadium & Crowd Management</div>
+    <div class="card">Construction Site Management</div>
+    <div class="card">Food Waste Management</div>
   </div>
 </section>
 
@@ -58,56 +93,28 @@
 <section id="certificates">
   <h2>Certificates</h2>
 
-  <div class="cert-container">
-
-    <!-- LEFT NAMES -->
-    <div class="cert-list">
-      <p onmouseover="showCert(1)">Yuva AI for All</p>
-      <p onmouseover="showCert(2)">Professional Etiquette Skills</p>
-      <p onmouseover="showCert(3)">MATLAB Programming</p>
-      <p onmouseover="showCert(4)">Email Etiquette</p>
-      <p onmouseover="showCert(5)">Chemistry Course</p>
-      <p onmouseover="showCert(6)">Engineering Physics</p>
-      <p onmouseover="showCert(7)">Python Programming</p>
-    </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="cert-display">
-      <img id="certImage" src="images/cert1.jpg">
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="projects">
-    <div class="card">
-      <h3>Smart Stadium</h3>
-      <p>AI-based crowd management system.</p>
-    </div>
-
-    <div class="card">
-      <h3>Construction Management</h3>
-      <p>Design thinking solution for site efficiency.</p>
-    </div>
-
-    <div class="card">
-      <h3>Food Waste Management</h3>
-      <p>ACE project to reduce food wastage.</p>
-    </div>
+  <div class="gallery">
+    <img src="./images/c0.png" onclick="openModal(this)">
+    <img src="./images/c1.png" onclick="openModal(this)">
+    <img src="./images/c2.png" onclick="openModal(this)">
+    <img src="./images/c3.png" onclick="openModal(this)">
+    <img src="./images/c4.png" onclick="openModal(this)">
+    <img src="./images/c5.png" onclick="openModal(this)">
+    <img src="./images/c6.png" onclick="openModal(this)">
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact Me</h2>
-  <p>Email: Shreyaslokhande37@gmail.com</p>
-  <p>Phone: 8767812138</p>
-  <a href="https://github.com/Shree1314" target="_blank">GitHub</a>
+  <p>📧 Shreyaslokhande37@gmail.com</p>
+  <p>📞 8767812138</p>
 </section>
+
+<!-- MODAL -->
+<div id="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
 
 <script src="script.js"></script>
 </body>
