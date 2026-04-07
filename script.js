@@ -1,6 +1,6 @@
-function openModal(src) {
+function openModal(card) {
   document.getElementById("modal").style.display = "flex";
-  document.getElementById("modal-img").src = src;
+  document.getElementById("modal-img").src = card.querySelector("img").src;
 }
 
 function closeModal() {
