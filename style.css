@@ -1,87 +1,94 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e1b4b);
-  color: white;
+  background: linear-gradient(135deg, #b39ddb, #f8bbd0);
+  color: #2d2d2d;
 }
 
 /* NAV */
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  background: rgba(255,255,255,0.05);
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.3);
   backdrop-filter: blur(10px);
 }
 
 /* HERO */
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  height: 90vh;
+  align-items: center;
+  padding: 80px;
 }
 
-.hero img {
-  width: 250px;
+.profile {
+  width: 200px;
   border-radius: 50%;
+  border: 4px solid silver;
+}
+
+/* ABOUT */
+.about-grid {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.marksheet {
+  width: 250px;
+  border-radius: 10px;
 }
 
 /* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
 .card {
   padding: 20px;
+  background: rgba(255,255,255,0.4);
   border-radius: 12px;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
-/* SKILLS */
-.bar {
-  background: #333;
-  height: 10px;
-  border-radius: 10px;
-}
-
-.bar div {
-  background: #6366f1;
-  height: 10px;
-  border-radius: 10px;
-}
-
-/* GALLERY */
-.gallery {
+/* CERTIFICATES */
+.cert-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.gallery img {
-  width: 200px;
-  cursor: pointer;
+.cert-card {
+  width: 220px;
+  background: rgba(255,255,255,0.4);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cert-card img {
+  width: 100%;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-.gallery img:hover {
+.cert-card img:hover {
   transform: scale(1.1);
 }
 
-/* MODAL */
-#modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  justify-content: center;
-  align-items: center;
+/* CONTACT */
+.socials {
+  margin-top: 20px;
 }
 
-#modal img {
-  max-width: 80%;
+.socials a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #6a1b9a;
 }
