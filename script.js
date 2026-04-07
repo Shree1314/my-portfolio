@@ -1,7 +1,3 @@
-function highlight(id) {
-  document.getElementById(id).classList.add("highlight");
-}
-
-function removeHighlight(id) {
-  document.getElementById(id).classList.remove("highlight");
+function showCert(num) {
+  document.getElementById("certImage").src = "images/cert" + num + ".jpg";
 }
