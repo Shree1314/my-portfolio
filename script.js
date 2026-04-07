@@ -1,12 +1,14 @@
-function openModal(img) {
-  document.getElementById("modal").style.display = "flex";
-  document.getElementById("modal-img").src = img.src;
-}
+document.querySelectorAll("section").forEach(sec => {
+  sec.style.opacity = "0";
+  sec.style.transform = "translateY(30px)";
+});
 
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-}
-
-function scrollToSection() {
-  document.getElementById("projects").scrollIntoView({behavior: "smooth"});
-}
+window.addEventListener("scroll", () => {
+  document.querySelectorAll("section").forEach(sec => {
+    if (sec.getBoundingClientRect().top < window.innerHeight - 100) {
+      sec.style.opacity = "1";
+      sec.style.transform = "translateY(0)";
+      sec.style.transition = "0.8s";
+    }
+  });
+});
