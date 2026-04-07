@@ -11,7 +11,17 @@ nav {
   justify-content: space-between;
   padding: 20px 50px;
   background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 /* HERO */
@@ -20,16 +30,16 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 120px 50px;
+  padding: 100px;
 }
 
 .profile {
-  width: 200px;
+  width: 180px;
   border-radius: 50%;
   border: 3px solid #7c3aed;
 }
 
-/* BLOBS (keep them but recolor) */
+/* BLOBS */
 .blob1, .blob2 {
   position: absolute;
   border-radius: 50%;
@@ -38,8 +48,8 @@ nav {
 }
 
 .blob1 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background: #7c3aed;
   opacity: 0.3;
   top: 50px;
@@ -65,7 +75,6 @@ nav {
 .marksheet {
   width: 250px;
   border-radius: 10px;
-  border: 2px solid #7c3aed;
 }
 
 /* CARDS */
@@ -78,12 +87,6 @@ nav {
   padding: 20px;
   background: rgba(255,255,255,0.05);
   border-radius: 12px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px #7c3aed;
 }
 
 /* CERTIFICATES */
@@ -98,19 +101,12 @@ nav {
   background: rgba(255,255,255,0.08);
   padding: 10px;
   border-radius: 12px;
-  text-align: center;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.cert-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #7c3aed;
+  text-align: center;
 }
 
 .cert-card img {
   width: 100%;
-  border-radius: 8px;
 }
 
 /* MODAL */
@@ -120,23 +116,17 @@ nav {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.9);
+  background: black;
   justify-content: center;
   align-items: center;
 }
 
 #modal img {
   max-width: 80%;
-  border-radius: 10px;
 }
 
 /* CONTACT */
 .socials a {
   margin-right: 20px;
   color: #b8a4e3;
-  text-decoration: none;
-}
-
-.socials a:hover {
-  color: #7c3aed;
 }
