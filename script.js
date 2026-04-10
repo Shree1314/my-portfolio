@@ -1,17 +1,21 @@
+// Wait for page load
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 🔥 Smooth scroll
-  document.querySelectorAll("nav a").forEach(link => {
+  // 🔥 Smooth scrolling
+  document.querySelectorAll("a[href^='#']").forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
+
       const target = document.querySelector(this.getAttribute("href"));
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
     });
   });
 
-  // ✨ Scroll animation
+  // ✨ Fade-in sections on scroll (SAFE VERSION)
   const sections = document.querySelectorAll("section");
 
   function reveal() {
@@ -25,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  window.addEventListener("scroll", reveal);
-  reveal();
-
-});
+  // Initial state (SAFE)
+  sections.forEach(sec => {
+    sec.style.opacity = "0.9";   // NOT fully hidden (important)
+    sec.style.transform = "translateY(20px)";
+    sec.style.transition = "all 0.6s ease";
+  });
