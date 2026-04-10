@@ -3,6 +3,13 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0f172a, #b8a4e3);
   color: white;
+}
+
+/* CONTAINER */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
   text-align: center;
 }
 
@@ -15,11 +22,24 @@ body {
   width: 140px;
   border-radius: 50%;
   border: 3px solid #7c3aed;
+  margin-bottom: 15px;
 }
 
-/* SECTIONS */
-section {
-  padding: 50px 20px;
+/* HEADINGS */
+h1 {
+  margin: 10px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+p {
+  max-width: 700px;
+  margin: 10px auto;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* CARDS */
@@ -33,19 +53,40 @@ section {
 .card {
   background: rgba(255,255,255,0.1);
   padding: 20px;
-  border-radius: 10px;
-  width: 250px;
+  border-radius: 12px;
+  width: 260px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #7c3aed;
 }
 
 /* CERTIFICATES */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 15px;
+  margin-top: 20px;
 }
 
 .gallery img {
-  width: 150px;
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* LINKS */
+a {
+  color: #b8a4e3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7c3aed;
 }
