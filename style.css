@@ -1,23 +1,51 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #b8a4e3);
+  color: white;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+}
+
+.profile {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid #7c3aed;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+}
+
+/* CARDS */
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
+  gap: 20px;
 }
 
 .card {
   background: rgba(255,255,255,0.1);
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
-  width: 200px;
-  transition: 0.3s;
+  width: 250px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 10px #7c3aed;
+/* CERTIFICATES */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-section {
-  padding: 50px 20px;
+.gallery img {
+  width: 150px;
+  border-radius: 8px;
 }
