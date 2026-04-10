@@ -23,7 +23,6 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 nav a:hover {
@@ -36,14 +35,6 @@ nav a:hover {
   justify-content: space-around;
   align-items: center;
   padding: 100px;
-}
-
-.hero-text h1 {
-  font-size: 40px;
-}
-
-.hero-text p {
-  opacity: 0.8;
 }
 
 .profile {
@@ -105,12 +96,4 @@ nav a:hover {
 }
 
 .links a:hover {
-  color: #7c3aed;
-}
-
-/* ANIMATION BASE */
-section {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
+  color: #7
