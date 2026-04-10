@@ -1,15 +1,12 @@
-const cards = document.querySelectorAll(".about-card");
+const elements = document.querySelectorAll(".reveal");
 
-function reveal() {
-  cards.forEach(card => {
-    const top = card.getBoundingClientRect().top;
-
-    if (top < window.innerHeight - 50) {
-      card.style.transform = "translateX(0)";
-      card.style.opacity = "1";
+function show() {
+  elements.forEach(el => {
+    if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+      el.classList.add("active");
     }
   });
 }
 
-window.addEventListener("scroll", reveal);
-reveal();
+window.addEventListener("scroll", show);
+show();
