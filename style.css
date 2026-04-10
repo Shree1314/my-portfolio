@@ -1,29 +1,23 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #b8a4e3);
-  color: white;
-  text-align: center;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
-/* NAV */
-nav {
+.card {
+  background: rgba(255,255,255,0.1);
   padding: 15px;
-  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  width: 200px;
+  transition: 0.3s;
 }
 
-/* HERO */
-.hero {
-  padding: 60px 20px;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #7c3aed;
 }
 
-.profile {
-  width: 120px;
-  border-radius: 50%;
-  border: 3px solid #7c3aed;
-}
-
-/* SECTIONS */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
