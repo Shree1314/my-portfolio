@@ -20,12 +20,30 @@ nav ul {
   list-style: none;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7c3aed;
+}
+
 /* HERO */
 .hero {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 100px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+}
+
+.hero-text p {
+  opacity: 0.8;
 }
 
 .profile {
@@ -45,18 +63,26 @@ nav ul {
 .edu-grid {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .edu-card {
   padding: 20px;
   background: rgba(255,255,255,0.08);
   border-radius: 12px;
+  transition: 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #7c3aed;
 }
 
 /* PROJECTS */
 .project-grid {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -75,4 +101,16 @@ nav ul {
 .links a {
   margin-right: 20px;
   color: #b8a4e3;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #7c3aed;
+}
+
+/* ANIMATION BASE */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
