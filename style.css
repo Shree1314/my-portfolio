@@ -3,97 +3,27 @@ body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0f172a, #b8a4e3);
   color: white;
+  text-align: center;
 }
 
 /* NAV */
 nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-}
-
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #7c3aed;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
 }
 
 /* HERO */
 .hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 100px;
+  padding: 60px 20px;
 }
 
 .profile {
-  width: 180px;
+  width: 120px;
   border-radius: 50%;
   border: 3px solid #7c3aed;
 }
 
-/* ABOUT */
-.about-box {
-  background: rgba(255,255,255,0.08);
-  padding: 30px;
-  border-radius: 12px;
+/* SECTIONS */
+section {
+  padding: 40px 20px;
 }
-
-/* EDUCATION */
-.edu-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.edu-card {
-  padding: 20px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.edu-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 15px #7c3aed;
-}
-
-/* PROJECTS */
-.project-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.project-card {
-  padding: 20px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px #7c3aed;
-}
-
-/* CONTACT */
-.links a {
-  margin-right: 20px;
-  color: #b8a4e3;
-  text-decoration: none;
-}
-
-.links a:hover {
-  color: #7
