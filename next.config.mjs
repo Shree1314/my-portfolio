@@ -6,6 +6,6 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: "/my-portfolio",
-};
+}
 
-export default nextConfig;
+export default nextConfig
