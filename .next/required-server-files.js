@@ -42,7 +42,7 @@ self.__SERVER_FILES_MANIFEST={
         256,
         384
       ],
-      "path": "/my-portfolio/_next/image",
+      "path": "/my-portfolio/_next/image/",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -79,7 +79,7 @@ self.__SERVER_FILES_MANIFEST={
     },
     "basePath": "/my-portfolio",
     "sassOptions": {},
-    "trailingSlash": false,
+    "trailingSlash": true,
     "i18n": null,
     "productionBrowserSourceMaps": false,
     "excludeDefaultMomentLocales": true,
