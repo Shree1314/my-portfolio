@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Playfair_Display, Geist_Mono } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
@@ -13,15 +13,18 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
 })
 
-const geistMono = Geist_Mono({
-  subsets: ['latin'],
-  variable: '--font-geist-mono',
-})
-
 export const metadata: Metadata = {
   title: 'Shreyas P Lokhande | Portfolio',
-  description: 'Turning ideas into impactful reality - Personal portfolio of Shreyas P Lokhande, an engineering student passionate about AI, programming, and problem solving.',
-  keywords: ['Shreyas Lokhande', 'Portfolio', 'AI', 'Engineering', 'Developer', 'Student'],
+  description:
+    'Turning ideas into impactful reality - Personal portfolio of Shreyas P Lokhande, an engineering student passionate about AI, programming, and problem solving.',
+  keywords: [
+    'Shreyas Lokhande',
+    'Portfolio',
+    'AI',
+    'Engineering',
+    'Developer',
+    'Student',
+  ],
   authors: [{ name: 'Shreyas P Lokhande' }],
   creator: 'Shreyas P Lokhande',
   openGraph: {
@@ -47,7 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${playfair.variable} ${geistMono.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+      >
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
